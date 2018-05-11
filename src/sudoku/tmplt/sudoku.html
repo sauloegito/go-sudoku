@@ -1,0 +1,11 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <table class="sudokuTable">{{range .Cells}}
+            <tr class="sudokuRow">{{range .}}
+                        <td class="sudokuCol">{{.|cellDeal}}</td>
+            {{end}}</tr>
+        {{end}}</table>
+    </body>
+</html>
